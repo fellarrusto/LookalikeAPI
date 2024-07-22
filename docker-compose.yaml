@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    image: lookalikeapi:latest
+    build: .
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/app
